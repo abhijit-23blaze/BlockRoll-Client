@@ -1,0 +1,44 @@
+.schedule-container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .class-buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .class-button {
+    color: white;
+    padding: 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  .class-button-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .class-button h4 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  .class-button p {
+    margin: 5px 0 0;
+    font-size: 16px;
+  }
+  
+  .class-button:hover {
+    opacity: 0.8;
+  }
+  

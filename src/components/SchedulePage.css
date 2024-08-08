@@ -1,0 +1,45 @@
+.schedule-page-container {
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    color: black;
+    min-height: 100vh;
+    position: relative;
+  }
+  
+  .date-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 18px;
+    color: #555;
+  }
+  
+  .class-schedule {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .class-item {
+    background-color: #1e90ff;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 600px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .class-item h3 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  .class-item p {
+    margin: 5px 0 0;
+    font-size: 18px;
+  }
+  

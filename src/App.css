@@ -9,16 +9,6 @@ h2 {
   color: #333;
 }
 
-.container {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
-  background: white;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-  margin-top: 50px;
-}
-
 button {
   background-color: #007bff;
   color: white;

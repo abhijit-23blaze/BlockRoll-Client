@@ -2,15 +2,15 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './loginpass.css';
 
-const LoginPage = () => {
-  const [username, setUsername] = useState('');
+const LoginPage = ({ setUsername }) => {
+  const [localUsername, setLocalUsername] = useState('');
   const [password, setPassword] = useState('');
   const navigate = useNavigate();
 
   const handleLogin = (e) => {
     e.preventDefault();
-    // For simplicity, we'll just redirect without actual authentication
-    navigate('/dashboard');
+    setUsername(localUsername);
+    navigate('/home');
   };
 
   return (
@@ -21,8 +21,8 @@ const LoginPage = () => {
           <label>Username: </label>
           <input
             type="text"
-            value={username}
-            onChange={(e) => setUsername(e.target.value)}
+            value={localUsername}
+            onChange={(e) => setLocalUsername(e.target.value)}
             required
           />
         </div>

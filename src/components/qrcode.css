@@ -1,73 +1,86 @@
 .qr-code-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin: 0 auto;
-    padding: 40px;
-    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    border-radius: 20px;
-    max-width: 500px;
-  }
-  
-  .qr-code-container h2 {
-    color: #fff;
-    font-size: 32px;
-    margin-bottom: 20px;
-  }
-  
-  .qr-code {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px 0;
-    padding: 20px;
-    background: rgba(255, 255, 255, 0.9);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    border-radius: 15px;
-  }
-  
-  .code-text {
-    color: #333;
-    font-size: 20px;
-    margin-top: 10px;
-    font-weight: bold;
-  }
-  
-  button {
-    background-color: #ff7f50;
-    color: white;
-    padding: 12px 24px;
-    border: none;
-    border-radius: 25px;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: bold;
-    margin-top: 15px;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-  }
-  
-  button:hover {
-    background-color: #ff6347;
-    transform: translateY(-2px);
-  }
-  
-  .generate-button {
-    background-color: #ff6f61;
-    margin-bottom: 20px;
-  }
-  
-  .generate-button:hover {
-    background-color: #ff473a;
-  }
-  
-  .toggle-button {
-    background-color: #f39c12;
-  }
-  
-  .toggle-button:hover {
-    background-color: #e67e22;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px;
+  background: linear-gradient(135deg, #000000 0%, #1e90ff 100%);
+  color: white;
+  min-height: 100vh;
+  position: relative; /* Added to position countdown timer */
+}
+
+.info-container,
+.qr-code,
+.scan-count-container {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 800px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.info-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.class-info,
+.class-info-time {
+  font-size: 24px;
+  color: #ffa07a;
+}
+
+.qr-code {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.qr-code img {
+  width: 256px;
+  height: 256px;
+  margin-bottom: 10px;
+}
+
+.code-text {
+  color: #333;
+  font-size: 20px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+button.generate-button {
+  background-color: #1e90ff;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 15px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button.generate-button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+.scan-count {
+  font-size: 36px;
+  color: #fff;
+}
+
+.countdown-timer {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 18px;
+  color: #ffa07a;
+}

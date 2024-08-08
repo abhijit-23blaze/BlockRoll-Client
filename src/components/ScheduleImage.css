@@ -1,0 +1,21 @@
+.schedule-image-container {
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    color: black;
+  }
+  
+  .schedule-image-container h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .schedule-image-container img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
