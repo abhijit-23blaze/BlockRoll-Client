@@ -12,7 +12,7 @@ const QRCodeGenerator = () => {
   const [showCode, setShowCode] = useState(false); // Start with the code hidden
 
   const generateQRCode = () => {
-    const newCode = Math.random().toString(36).substring(2, 15);
+    const newCode = Math.floor(Math.random() * 1000000).toString(); // Generate a number between 0 and 999999
     setRandomCode(newCode);
   };
 
@@ -58,12 +58,12 @@ const QRCodeGenerator = () => {
           </div>
         )}
         <div className="countdown-timer">
-          {isVisible ? countdown : 'QR code is hidden.If you are not able to scan Please contact the faculty.'}
+          {isVisible ? countdown : 'QR code is hidden. If you are not able to scan, please contact the faculty.'}
         </div>
       </div>
       <div className="bottom-container">
         <div className="scan-count-container">
-          <p className="scan-count">Attendies Count: {scanCount}</p>
+          <p className="scan-count">Attendees Count: {scanCount}</p>
         </div>
       </div>
     </div>
