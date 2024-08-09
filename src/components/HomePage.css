@@ -7,14 +7,14 @@
     color: white;
   }
   .home-container h3{
-    color: black;
+    color: rgba(0, 0, 0, 0.7);
   }
   
   .home-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 10px;
     background-color: rgba(0, 0, 0, 0.7);
     border-radius: 8px;
   }
