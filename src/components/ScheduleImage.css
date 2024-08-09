@@ -1,21 +1,18 @@
 .schedule-image-container {
-    text-align: center;
-    padding: 20px;
-    background-color: white;
-    color: black;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 800px;
+  background-color: #f0f0f0;
+  background-image:url(./IMAGES/Timetable.jpg) ;
+  background-size: cover;
   
-  .schedule-image-container h2 {
-    font-size: 36px;
-    color: #333;
-    margin-bottom: 20px;
-  }
-  
-  .schedule-image-container img {
-    max-width: 100%;
-    height: auto;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  }
-  
+}
+
+.schedule-image {
+  max-width: 90%;
+  max-height: 90%;
+  border: 5px solid white;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
