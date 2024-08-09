@@ -7,8 +7,9 @@ const QRCodeGenerator = () => {
   const { className, classTime } = useParams();
   const [randomCode, setRandomCode] = useState('');
   const [scanCount, setScanCount] = useState(0);
-  const [countdown, setCountdown] = useState(30);
+  const [countdown, setCountdown] = useState(15);  // Set timer to 15 seconds
   const [isVisible, setIsVisible] = useState(true);
+  const [showCode, setShowCode] = useState(true);
 
   const generateQRCode = () => {
     const newCode = Math.random().toString(36).substring(2, 15);
@@ -21,7 +22,7 @@ const QRCodeGenerator = () => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCountdown(prevCountdown => prevCountdown - 1);
+      setCountdown((prevCountdown) => prevCountdown - 1);
     }, 1000);
 
     if (countdown <= 0) {
@@ -36,26 +37,34 @@ const QRCodeGenerator = () => {
     setScanCount(scanCount + 1);
   };
 
+  const toggleCodeVisibility = () => {
+    setShowCode(!showCode);
+  };
+
   return (
     <div className="qr-code-container">
       <div className="info-container">
         <h2 className="class-info">{className}</h2>
         <h3 className="class-info-time">{classTime}</h3>
       </div>
-      {isVisible && (
-        <div className="qr-code" onClick={handleScan}>
-          <QRCode value={randomCode} size={256} />
-          <p className="code-text">Code: {randomCode}</p>
-          <button className="generate-button" onClick={generateQRCode}>
-            Regenerate QR Code
-          </button>
+      <div className="qr-code-wrapper">
+        {isVisible && (
+          <div className="qr-code" onClick={handleScan}>
+            <QRCode value={randomCode} size={256} />
+            <p className={`code-text ${!showCode && 'hidden'}`}>Code: {randomCode}</p>
+            <button className="toggle-button" onClick={toggleCodeVisibility}>
+              {showCode ? 'Hide Code' : 'Show Code'}
+            </button>
+          </div>
+        )}
+        <div className="countdown-timer">
+          {isVisible ? countdown : 'QR code is hidden.'}
         </div>
-      )}
-      <div className="scan-count-container">
-        <p className="scan-count">QR Code Scanned: {scanCount} times</p>
       </div>
-      <div className="countdown-timer">
-        {isVisible ? `Hiding in ${countdown} seconds...` : 'QR code is hidden.'}
+      <div className="bottom-container">
+        <div className="scan-count-container">
+          <p className="scan-count">QR Code Scanned: {scanCount} times</p>
+        </div>
       </div>
     </div>
   );

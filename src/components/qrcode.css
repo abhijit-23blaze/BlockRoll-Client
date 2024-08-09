@@ -5,85 +5,82 @@
   justify-content: center;
   text-align: center;
   padding: 40px;
-  background: linear-gradient(135deg, #fffefe 0%, #ffffff 100%);
+  background: linear-gradient(135deg, #000000 0%, #1e90ff 100%);
   color: white;
   min-height: 100vh;
-  position: relative;  
-}
-
-.info-container,
-.qr-code,
-.scan-count-container {
-  background: rgba(26, 1, 136, 0.8);
-  padding: 20px;
-  border-radius: 10px;
-  margin-bottom: 20px;
-  width: 100%;
-  max-width: 1000px; 
-  box-shadow: 0 4px 15px rgba(242, 112, 112, 0.1);
+  position: relative;
 }
 
 .info-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  margin-bottom: 20px;
 }
 
-.class-info{
+.class-info {
   font-size: 24px;
-  color: white;
+  font-weight: bold;
+  color: white;  
 }
 .class-info-time {
-  font-size: 24px;
-  color: white;
+  font-size: 20px;
+}
+
+.qr-code-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .qr-code {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  margin-right: 20px; /* Shift QR code slightly to the left */
 }
 
 .qr-code img {
   width: 256px;
   height: 256px;
-  margin-bottom: 10px;
 }
 
 .code-text {
-  color: white;
-  font-size: 20px;
+  font-size: 18px;
   margin-top: 10px;
-  font-weight: bold;
 }
 
-button.generate-button {
+.code-text.hidden {
+  visibility: hidden; /* Hide the code without affecting layout */
+}
+
+.toggle-button {
+  padding: 10px 20px;
+  font-size: 16px;
   background-color: #1e90ff;
   color: white;
-  padding: 12px 24px;
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  font-size: 16px;
-  font-weight: bold;
+  transition: background-color 0.3s ease;
   margin-top: 15px;
-  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-button.generate-button:hover {
+.toggle-button:hover {
   background-color: #0056b3;
-  transform: translateY(-2px);
 }
 
-.scan-count {
-  font-size: 36px;
-  color: #fff;
+.bottom-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
 }
 
 .countdown-timer {
-  position: absolute;
-  top: 10px;
-  right: 20px;
-  font-size: 18px;
-  color:rgba(26, 1, 136, 0.8);
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: #ffa07a;
+  background-color: #ffffff;
+  color: #000000;
+  border: 3px solid black;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
