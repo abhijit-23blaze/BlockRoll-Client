@@ -13,26 +13,47 @@ const Schedule = () => {
       [
         { name: 'OS UG-2 SEC-03', time: '09:45 AM - 10:45 AM' },
         { name: 'BTP UG-3 OPT', time: '12:00 PM - 01:00 PM' },
+        { name: 'Data Structures UG-2', time: '10:00 AM - 11:00 AM' },
+        { name: 'Algorithms UG-2', time: '02:00 PM - 03:00 PM' },
+        { name: 'Artificial Intelligence UG-3', time: '10:00 AM - 11:00 AM' },
+        { name: 'Machine Learning UG-3', time: '02:00 PM - 03:00 PM' },
       ],
       [
         { name: 'Data Structures UG-2', time: '10:00 AM - 11:00 AM' },
         { name: 'Algorithms UG-2', time: '02:00 PM - 03:00 PM' },
+        { name: 'Artificial Intelligence UG-3', time: '10:00 AM - 11:00 AM' },
+        { name: 'Machine Learning UG-3', time: '02:00 PM - 03:00 PM' },
+        
       ],
       [
         { name: 'DBMS UG-2 SEC-01', time: '11:00 AM - 12:00 PM' },
         { name: 'Software Engineering UG-3', time: '03:00 PM - 04:00 PM' },
+        { name: 'Data Structures UG-2', time: '10:00 AM - 11:00 AM' },
+        { name: 'Algorithms UG-2', time: '02:00 PM - 03:00 PM' },
+        { name: 'Artificial Intelligence UG-3', time: '10:00 AM - 11:00 AM' },
+        { name: 'Machine Learning UG-3', time: '02:00 PM - 03:00 PM' },
       ],
       [
         { name: 'Computer Networks UG-2', time: '09:00 AM - 10:00 AM' },
         { name: 'Operating Systems UG-2', time: '12:00 PM - 01:00 PM' },
+        { name: 'Data Structures UG-2', time: '10:00 AM - 11:00 AM' },
+        { name: 'Algorithms UG-2', time: '02:00 PM - 03:00 PM' },
+        { name: 'Artificial Intelligence UG-3', time: '10:00 AM - 11:00 AM' },
+        { name: 'Machine Learning UG-3', time: '02:00 PM - 03:00 PM' },
       ],
       [
         { name: 'Theory of Computation UG-2', time: '08:00 AM - 09:00 AM' },
         { name: 'BTP UG-3 OPT', time: '01:00 PM - 02:00 PM' },
+        { name: 'Data Structures UG-2', time: '10:00 AM - 11:00 AM' },
+        { name: 'Algorithms UG-2', time: '02:00 PM - 03:00 PM' },
+        { name: 'Artificial Intelligence UG-3', time: '10:00 AM - 11:00 AM' },
+        { name: 'Machine Learning UG-3', time: '02:00 PM - 03:00 PM' },
       ],
       [
         { name: 'Artificial Intelligence UG-3', time: '10:00 AM - 11:00 AM' },
         { name: 'Machine Learning UG-3', time: '02:00 PM - 03:00 PM' },
+        { name: 'Data Structures UG-2', time: '10:00 AM - 11:00 AM' },
+        { name: 'Algorithms UG-2', time: '02:00 PM - 03:00 PM' },
       ],
     ];
 

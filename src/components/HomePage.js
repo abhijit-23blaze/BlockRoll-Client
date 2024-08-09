@@ -30,7 +30,7 @@ const HomePage = ({ username }) => {
   return (
     <div className="home-container">
       <header className="home-header">
-        <div className="username">Welcome, {username}</div>
+        <div className="username">Welcome, {username} Sir</div>
         <div className="header-right">
           <div className="current-date">{currentDate}</div>
           <Link to="/schedule" className="schedule-button">Schedule</Link>

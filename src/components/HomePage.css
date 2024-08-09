@@ -1,13 +1,16 @@
 .home-container {
     text-align: center;
     padding: 20px;
-    min-height: 100vh;
-    background: url(./IMAGES/BACKGROUNDIMAG.png) ;
+    min-height: 800px;
+    background-color: white;
     background-size: cover;
     color: white;
+    background-image: url(./IMAGES/bac.jpg);
+    background-size: cover;
+
   }
   .home-container h3{
-    color: rgba(0, 0, 0, 0.7);
+    color: black;
   }
   
   .home-header {
@@ -15,7 +18,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(26, 1, 136, 0.8) ;
     border-radius: 8px;
   }
   
@@ -70,7 +73,7 @@
     right: 0;
     background-color: white;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(26, 1, 136, 0.8);
     overflow: hidden;
   }
   
