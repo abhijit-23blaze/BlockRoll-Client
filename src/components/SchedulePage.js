@@ -53,7 +53,7 @@ const SchedulePage = () => {
           { name: 'RANAC', time: '8:45 AM - 9:45 AM' },
           { name: 'OS', time: '9:45 AM - 10:45 AM' },
           { name: 'DBMS', time: '11:00 AM - 12:00 PM' },
-          { name: 'ADSA', time: '2:15 PM - 3:15 PM' },
+          { name: 'DBMS LAB', time: '2:15 PM - 3:15 PM' },
           { name: 'DBMS LAB', time: '3:15 PM - 4:15 PM' },
             { name: 'DBMS LAB', time: '4:30 PM - 5:30 PM' },
         ],

@@ -6,6 +6,9 @@
     background-size: cover;
     color: white;
   }
+  .home-container h3{
+    color: black;
+  }
   
   .home-header {
     display: flex;
