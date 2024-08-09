@@ -43,10 +43,12 @@
 .code-text {
   font-size: 18px;
   margin-top: 10px;
+  color: purple;
 }
 
 .code-text.hidden {
-  visibility: hidden; /* Hide the code without affecting layout */
+  visibility: hidden;
+  
 }
 
 .toggle-button {
