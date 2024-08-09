@@ -9,7 +9,7 @@ const QRCodeGenerator = () => {
   const [scanCount, setScanCount] = useState(0);
   const [countdown, setCountdown] = useState(15);  // Set timer to 15 seconds
   const [isVisible, setIsVisible] = useState(true);
-  const [showCode, setShowCode] = useState(true);
+  const [showCode, setShowCode] = useState(false); // Start with the code hidden
 
   const generateQRCode = () => {
     const newCode = Math.random().toString(36).substring(2, 15);
@@ -58,12 +58,12 @@ const QRCodeGenerator = () => {
           </div>
         )}
         <div className="countdown-timer">
-          {isVisible ? countdown : 'QR code is hidden.'}
+          {isVisible ? countdown : 'QR code is hidden.If you are not able to scan Please contact the faculty.'}
         </div>
       </div>
       <div className="bottom-container">
         <div className="scan-count-container">
-          <p className="scan-count">QR Code Scanned: {scanCount} times</p>
+          <p className="scan-count">Attendies Count: {scanCount}</p>
         </div>
       </div>
     </div>

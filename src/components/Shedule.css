@@ -1,44 +1,40 @@
 .schedule-container {
-    background:white;
-    padding: 10px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .class-buttons {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-  }
-  
-  .class-button {
-    color: rgb(255, 255, 255);
-    padding: 20px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 18px;
-    text-decoration: none;
-    text-align: center;
-  }
-  
-  .class-button-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .class-button h4 {
-    margin: 0;
-    font-size: 24px;
-  }
-  
-  .class-button p {
-    margin: 5px 0 0;
-    font-size: 16px;
-  }
-  
-  .class-button:hover {
-    opacity: 0.8;
-  }
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.class-buttons {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 500px;
+}
+
+.class-button {
+  text-decoration: none;
+  color: white; /* Set text color to white */
+  padding: 15px;
+  margin: 5px 0;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.class-button-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.class-button h4 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.class-button p {
+  margin: 5px 0 0;
+  font-size: 14px;
+}
