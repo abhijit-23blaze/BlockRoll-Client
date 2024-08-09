@@ -40,10 +40,10 @@ const Schedule = () => {
       ],
       [
         { name: 'Theory of Computation UG-2', time: '08:00 AM - 09:00 AM' },
-        { name: 'BTP UG-3 OPT', time: '01:00 PM - 02:00 PM' },
-        { name: 'Data Structures UG-2', time: '10:00 AM - 11:00 AM' },
-        { name: 'Algorithms UG-2', time: '02:00 PM - 03:00 PM' },
         { name: 'Artificial Intelligence UG-3', time: '10:00 AM - 11:00 AM' },
+        { name: 'Data Structures UG-2', time: '10:00 AM - 11:00 AM' },
+        { name: 'BTP UG-3 OPT', time: '01:00 PM - 02:00 PM' },
+        { name: 'Algorithms UG-2', time: '02:00 PM - 03:00 PM' },
         { name: 'Machine Learning UG-3', time: '02:00 PM - 03:00 PM' },
       ],
       [
